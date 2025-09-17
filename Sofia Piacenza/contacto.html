@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Sofía Piacenza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-lila shadow-sm">
+  <div class="container">
+    <a class="navbar-brand text-black" href="index.html">Sofía Piacenza</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-black" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="proyectos.html">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="paquetes.html">Paquetes</a></li>
+        <li class="nav-item"><a class="nav-link text-black active" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-lila d-flex align-items-center justify-content-center text-center text-black py-5">
+  <div>
+    <h1>Contacto</h1>
+    <p>¡Hablemos! Estoy disponible para ayudarte a crecer tu negocio online</p>
+  </div>
+</section>
+
+<!-- Información y Formulario de Contacto -->
+<section class="container py-5">
+  <div class="row g-5">
+
+    <!-- Formulario -->
+    <div class="col-md-6">
+      <h3>Enviame un mensaje</h3>
+      <p>Completá el formulario y te responderé lo antes posible (generalmente en 24h).</p>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-negro">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <!-- Info de Contacto -->
+    <div class="col-md-6 text-center">
+      <h3>Contacto directo</h3>
+      <p>Si preferís contactarme directamente, podés hacerlo por mis redes sociales:</p>
+      <div class="d-flex flex-column gap-3 mt-3">
+        <a href="https://instagram.com/sofi.piacenza" target="_blank" class="btn btn-negro">Instagram: @sofi.piacenza</a>
+        <a href="https://wa.me/59831002212" target="_blank" class="btn btn-negro">WhatsApp: +598 091002212</a>
+      </div>
+
+      <h4 class="mt-5">Información adicional</h4>
+      <p>Mi horario de atención es de lunes a viernes de 9:00 a 18:00. Siempre trato de responder tus consultas rápidamente para que podamos empezar a trabajar juntos sin demoras.</p>
+      <p>Ofrezco soluciones personalizadas según tu negocio, así que no dudes en escribirme con todos los detalles que consideres importantes.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center bg-lila text-black py-4 mt-5">
+  <p>© 2023 Sofía Piacenza - Todos los derechos reservados</p>
+  <div class="d-flex justify-content-center gap-3 mt-2">
+    <a href="https://instagram.com/sofi.piacenza" target="_blank" class="text-black">Instagram</a>
+    <a href="https://wa.me/59891002212" target="_blank" class="text-black">WhatsApp</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

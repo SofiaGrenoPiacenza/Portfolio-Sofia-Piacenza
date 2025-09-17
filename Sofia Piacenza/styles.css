@@ -1,0 +1,172 @@
+:root {
+  --color-lila: #c8a2c8;
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+  --border-radius: 12px;
+  --padding-section: 60px;
+  --transition: 0.3s;
+  --input-border: #ccc;
+}
+
+/* Body y tipografía */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-lila) !important;
+}
+.nav-link {
+  color: var(--color-negro) !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #333 !important;
+}
+
+/* Hero */
+.hero-lila {
+  background-color: var(--color-lila);
+  color: var(--color-negro);
+  min-height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-lila h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.hero-lila p {
+  font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+  border-radius: var(--border-radius);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Botones */
+.btn {
+  border-radius: var(--border-radius);
+  transition: all var(--transition);
+  font-weight: 500;
+}
+.btn-lila {
+  background-color: var(--color-lila);
+  color: var(--color-negro);
+}
+.btn-lila:hover {
+  background-color: #b088b0;
+  color: var(--color-negro);
+}
+.btn-negro {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+}
+.btn-negro:hover {
+  background-color: #333;
+  color: var(--color-blanco);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-lila);
+  color: var(--color-negro);
+  font-size: 0.9rem;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+/* Secciones */
+section {
+  padding: var(--padding-section) 0;
+}
+
+/* Formulario */
+form .form-control {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--input-border);
+  padding: 10px 15px;
+  transition: all var(--transition);
+}
+form .form-control:focus {
+  border-color: var(--color-lila);
+  box-shadow: 0 0 5px rgba(200,162,200,0.5);
+  outline: none;
+}
+form .form-label {
+  font-weight: 500;
+}
+form button {
+  margin-top: 10px;
+}
+
+/* Info de contacto */
+.text-center a.btn {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .hero-lila h1 {
+    font-size: 2rem;
+  }
+  .hero-lila p {
+    font-size: 1rem;
+  }
+  form button {
+    width: 100%;
+  }
+}
+/* Animación de cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.card img {
+  transition: transform 0.3s ease;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
